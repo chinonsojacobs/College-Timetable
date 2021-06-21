@@ -1,0 +1,9 @@
+classes
+   |
+module(fixed)
+  |
+day(fixed)
+  |
+time(between 2)
+  |
+lecturer and room(fixed)
