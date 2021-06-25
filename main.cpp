@@ -12,6 +12,11 @@
 		string room[7] = {"Room 12", "Room 03", "Room 14", "Room 11", "Room 16", "Room 09", "Room 17"};
 		string day[5] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
 		string Time[7] = { "10", "11", "12", "1", "2", "3", "4"};
+		string monday[6]= {};
+		string tuesday[6]= {};
+		string wednesday[6]= {};
+		string thursday[6]= {};
+		string friday[6]= {};
 		
 		string n = name[10];
 		string c = classes[19];
@@ -21,6 +26,7 @@
 		void mod4003();
 		void mod4007();
 		void mod4004();
+		void display();
 		
 		 void timeT(){
 			cout <<"Enter Student Name: " << endl << "->";
@@ -45,6 +51,7 @@
 			cout <<endl << "Please enter 2 for " + day[0] +" " + Time[4] + " " + "-" + " " + Time[5] + " "+ " "+ module[0] << endl ;
 			cin >> timing;
 			
+
 			  mod4005();
 			
 		}
@@ -63,6 +70,9 @@
 			
 			cout <<endl << "Please enter 2 for " + day[3] +" " + Time[5] + " " + "-" + " " + Time[6] + " "+ " "+ module[0] << endl ;
 			cin >> timing;
+			
+			monday[0]= {"you have monday class 1-2"};
+			monday[1]= {"you have thursday class 9-10"};
 		
 			mod4003();
 		}
@@ -74,6 +84,9 @@
 			
 			cout <<endl << "Please enter 2 for " + day[3] +" " + Time[5] + " " + "-" + " " + Time[6] + " "+ " "+ module[0] << endl ;
 			cin >> timing;
+				
+			monday[0]= {"you have monday class 2-3"};
+			monday[1]= {"you have thursday class 8-9"};
 					mod4003();
 			}
 		}
@@ -90,6 +103,8 @@
 			cout <<endl << "Please enter 2 for " + day[1] +" " + Time[4] + " " + "-" + " " + Time[6] + " "+ " "+ module[1] << endl ;
 			cin >> timing;
 			
+			tuesday[0]= {"you have tuesday class 10-1"};
+		
 			mod4007();
 		
 		    }
@@ -103,6 +118,7 @@
 			cout <<endl << "Please enter 2 for " + day[1] +" " + Time[4] + " " + "-" + " " + Time[6] + " "+ " "+ module[1] << endl ;
 			cin >> timing;
 			
+			tuesday[0]= {"you have tuesday class 12-3"};
 			mod4007();
 			}
 		}
@@ -118,7 +134,7 @@
 			
 			cout <<endl << "Please enter 2 for " + day[2] +" " + Time[5] + " " + "-" + " " + Time[6] + " "+ " "+ module[0] << endl ;
 			cin >> timing;
-		
+		  	wednesday[0]= {"you have wednesday class 1-2"};
 		       mod4004();
 		    }
 			
@@ -129,6 +145,8 @@
 			
 			cout <<endl << "Please enter 2 for " + day[2] +" " + Time[5] + " " + "-" + " " + Time[6] + " "+ " "+ module[0] << endl ;
 			cin >> timing;
+			
+			wednesday[0]= {"you have wednesday class 9-10"};
 		
 		       mod4004();
 			}
@@ -147,7 +165,9 @@
 				cin >> timing;
 				
 				cout <<timing;
-			
+				
+				friday[0]= {"you have friday class 9-10"};
+			    display();
 			}
 			
 			else if (timing==2){
@@ -157,8 +177,19 @@
 				
 				cout <<endl << "Please enter 2 for " + day[4] +" " + Time[3] + " " + "-" + " " + Time[5] + " "+ " "+ module[0] << endl ;
 				cin >> timing;
-					
+				
+				friday[0]= {"you have friday class 1-2"};
+			     display();
 			}
+		}
+		
+		void display(){
+			cout << monday[0] << endl;
+			cout << monday[1] << endl;
+			cout << tuesday[0] << endl;
+			cout << wednesday[0] << endl;
+			cout << friday[0] << endl;
+						
 		}
 			
 			
