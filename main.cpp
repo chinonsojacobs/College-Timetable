@@ -27,9 +27,9 @@
 		
 		 void timeT(){
 			cout <<"Enter Student Name: " << endl << "->";
-			cin >> n;
+			getline ( cin, n );
 			cout <<endl<<"Enter Class: "<< endl <<"->";
-			cin >> c;
+			getline ( cin, c );
 			
 			cout <<endl<<"Available Modules for " + c +":" << endl;
 			cout << endl << module[0];
